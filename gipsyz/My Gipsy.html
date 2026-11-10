@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+
+body {
+    margin: 0;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    background-image: url("background2.jpg");
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 400px;
+
+    position: relative;
+}
+
+.logo {
+    background-image: url("logo2.jpg");
+    background-position: left top;
+    background-size: cover;
+
+    width: 300px;
+    height: 150px;
+
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.menu {
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    background-color: rgb(8, 2, 109);
+    white-space: nowrap;
+    border-radius: 5px;
+    transition: 0,9s;
+    margin: 5px;
+}
+
+
+/* WARNA MENU */
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* HOVER */
+
+.menu a:hover {
+    color: black;
+}
+
+
+/* ================= BODY ================= */
+
+.body {
+    background-image: url("bg body.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 1600px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding-left: 70px;
+    padding-top: 100px;
+    gap: 20px;
+
+    box-sizing: border-box;
+
+    overflow: visible;
+}
+
+
+/* ================= INFO GIPSY ================= */
+
+
+.info {
+    width: 400px;
+    min-height: 650px;
+
+    background-color: rgba(3, 0, 152, 0.85);
+
+    padding: 60px 30px;
+
+    box-sizing: border-box;
+
+    border: 2px solid #222;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 55px;
+
+    flex-shrink: 0;
+}
+
+/* KOTAK MENU */
+
+.info-box {
+    width: 100%;
+    height: 125px;
+
+   background-color: rgba(3, 0, 152, 0.85);
+
+    border: 2px solid #222;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 10px 10px 0 #111;
+
+    transition: 0.3s;
+}
+
+.info-box h2 {
+    font-size: 25px;
+    color: #fbf8f8;
+
+    margin: 0;
+}
+
+/* HOVER */
+
+.info-box:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 14px 14px 0 #111;
+
+    cursor: pointer;
+}
+
+
+/* ================= AREA GIPSY ================= */
+
+.visual {
+    position: relative;
+
+    width: 850px;
+    min-height: 1400px;
+
+    flex-shrink: 0;
+}
+
+
+/* ================= GIPSY ================= */
+
+.gipsy {
+    position: absolute;
+
+    width: 500px;
+
+    left: 0;
+    bottom: 500px;
+
+    z-index: 2;
+}
+
+.gipsy img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ================= SENJATA ================= */
+
+.weapons {
+    position: absolute;
+
+    right: 0;
+    top: 0px;
+
+    width: 350px;
+
+    color: white;
+
+    z-index: 3;
+}
+
+
+/* ================= CHAIN SWORD ================= */
+
+.weapon {
+    margin-bottom: 30px;
+}
+
+.weapon img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.weapon h2 {
+    margin: 5px 0 5px 0;
+
+    font-size: 24px;
+
+    color: white;
+}
+
+.weapon p {
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: white;
+}
+
+
+/* ================= PLASMA CASTER ================= */
+
+.plasma {
+    margin-top: 25px;
+}
+
+.plasma img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.plasma h2 {
+    margin: 10px 0 5px 0;
+
+    font-size: 24px;
+
+    color: white;
+}
+
+.plasma p {
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: white;
+}
+/* ================= SIKU GIPSY ================= */
+
+.siku {
+    margin-top:25px ;
+}
+
+.siku img{
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.siku h2 {
+    margin: 10px 0 5px 0;
+
+    font-size: 24px;
+
+    color: white;
+}
+
+.siku p {
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: white;
+}
+
+.footer {
+    background-color: #080d14;
+    color: white;
+    text-align: center;
+
+    padding: 30px;
+    margin-top: 0;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 10;
+}
+
+.footer h1 {
+    margin: 0 0 10px 0;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer-menu {
+    margin: 20px 0;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-menu a:hover {
+    color: red;
+}
+
+.footer hr {
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* ================= FOOTER CONTENT ================= */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    width: 250px;
+    text-align: center;
+}
+
+.footer-left img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    width: 250px;
+    text-align: center;
+}
+
+.footer-right h3 {
+    margin-bottom: 15px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #000560;
+}
+
+
+
+/* ================= LAYAR KECIL ================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        min-height: 160px;
+    }
+
+    .logo {
+        width: 220px;
+        height: 70px;
+
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .menu {
+        margin-left: auto;
+        margin-right: 15px;
+        margin-top: 25px;
+
+        font-size: 14px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<div class="header">
+
+    <div class="logo">
+    </div>
+
+    <div class="menu">
+
+        <a href="#"><strong>HOME</strong></a> |
+        <a href="#"><strong>JAEGER</strong></a> |
+        <a href="#"><strong>KAIJU</strong></a> |
+        <a href="#"><strong>DEVELOPER</strong></a> |
+    </div>
+
+</div>
+
+
+
+<!-- ================= BODY ================= -->
+
+<div class="body">
+
+
+    <!-- INFO GIPSY -->
+
+   <!-- MENU INFO GIPSY -->
+
+<div class="info">
+
+    <div class="info-box">
+        <h2>ABOUT</h2>
+    </div>
+
+    <div class="info-box">
+        <h2>BIODATA</h2>
+    </div>
+
+    <div class="info-box">
+        <h2>SOCIAL MEDIA</h2>
+    </div>
+
+</div>
+
+    <!-- ================= AREA VISUAL ================= -->
+
+    <div class="visual">
+
+
+        <!-- GIPSY -->
+
+        <div class="gipsy">
+
+            <img src="gipsynobg.jpg">
+
+        </div>
+
+
+
+        <!-- ================= SENJATA ================= -->
+
+        <div class="weapons">
+
+
+            <!-- CHAIN SWORD -->
+
+            <div class="weapon">
+
+                <img src="gsword.jpg">
+
+                <h2>CHAIN SWORD</h2>
+
+                <p>
+                    Senjata jarak dekat Gipsy Danger
+                    yang digunakan untuk menghadapi
+                    Kaiju dalam pertarungan jarak dekat.
+                </p>
+
+            </div>
+
+
+
+            <!-- PLASMA CASTER -->
+
+            <div class="plasma">
+
+                <img src="gplasma.jpg">
+
+                <h2>PLASMA CASTER</h2>
+
+                <p>
+                    Senjata energi yang terpasang pada
+                    lengan Gipsy Danger dan digunakan
+                    untuk memberikan serangan plasma
+                    berkekuatan tinggi.
+                </p>
+
+            </div>
+
+            <div class="siku">
+
+                <img src="gsiku.jpg">
+
+                <h2>ELBOW THUNDER</h2>
+
+                <p>
+                    Sistem pendorong yang terpasang Pada
+                    bagian siku Gipsy Danger. Menggunakan 
+                    semburan tenaga untuk meningkatkan gaya
+                    dorong saat melakukan pukulan,sehingga
+                    menghasilkan serangan yang lebih kuat
+                    terhada kaiju.
+                    
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    </div> <!-- .visual -->
+
+</div> <!-- .body -->
+
+
+<!-- ================= FOOTER ================= -->
+
+<div class="footer">
+
+    <div class="footer-content">
+
+        <!-- KIRI -->
+        <div class="footer-left">
+
+            <img src="logosija.jpg">
+
+        </div>
+
+
+        <!-- TENGAH -->
+        <div class="footer-center">
+
+            <h1>PACIFIC RIM</h1>
+
+            <p>
+                Rise Of The Jaeger. Fight The Kaiju
+            </p>
+
+            <div class="footer-menu">
+
+                <a href="#"><strong>HOME</strong></a> |
+                <a href="#"><strong>JAEGER</strong></a> |
+                <a href="#"><strong>KAIJU</strong></a> |
+                <a href="#"><strong>DEVELOPER</strong></a>
+
+            </div>
+
+        </div>
+
+
+        <!-- KANAN -->
+        <div class="footer-right">
+
+    <h3>FOLLOW ME</h3>
+
+    <div class="social-media">
+
+        <a href="#" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" title="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="#" title="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <hr>
+
+    <p>
+        © 2026 Pacific Rim Fan Website
+    </p>
+
+</div>
+
+
+</body>
+</html>
