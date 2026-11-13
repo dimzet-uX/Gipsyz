@@ -1,23 +1,33 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
 
-body {
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* ================= HEADER ================= */
 
 .header {
     background-image: url("background2.jpg");
-    background-size: 100% auto;
-    background-position: top center;
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
-    height: 400px;
-
+    height: 600px;
+    width: 100%;
     position: relative;
 }
 
@@ -36,17 +46,15 @@ body {
 
 .menu {
     position: absolute;
-    right: 30px;
-    top: 45px;
+    right: 5%;
+    top: 75px;
+
     background-color: rgb(8, 2, 109);
     white-space: nowrap;
     border-radius: 5px;
-    transition: 0,9s;
+    transition: 0.3s;
     margin: 5px;
 }
-
-
-/* WARNA MENU */
 
 .menu a {
     color: white;
@@ -54,13 +62,9 @@ body {
     margin: 0 10px;
 }
 
-
-/* HOVER */
-
 .menu a:hover {
     color: black;
 }
-
 
 /* ================= BODY ================= */
 
@@ -77,28 +81,19 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
 
-    padding-left: 70px;
-    padding-top: 100px;
-    gap: 20px;
-
-    box-sizing: border-box;
-
-    overflow: visible;
+    padding: 100px 5% 0;
+    gap: 3%;
 }
-
 
 /* ================= INFO GIPSY ================= */
 
-
 .info {
-    width: 400px;
+    width: 32%;
     min-height: 650px;
 
     background-color: rgba(3, 0, 152, 0.85);
 
     padding: 60px 30px;
-
-    box-sizing: border-box;
 
     border: 2px solid #222;
 
@@ -112,13 +107,11 @@ body {
     flex-shrink: 0;
 }
 
-/* KOTAK MENU */
-
 .info-box {
     width: 100%;
     height: 125px;
 
-   background-color: rgba(3, 0, 152, 0.85);
+    background-color: rgba(3, 0, 152, 0.85);
 
     border: 2px solid #222;
 
@@ -127,45 +120,38 @@ body {
     justify-content: center;
 
     box-shadow: 10px 10px 0 #111;
-
     transition: 0.3s;
 }
 
 .info-box h2 {
     font-size: 25px;
     color: #fbf8f8;
-
     margin: 0;
 }
-
-/* HOVER */
 
 .info-box:hover {
     transform: translate(-4px, -4px);
     box-shadow: 14px 14px 0 #111;
-
     cursor: pointer;
 }
-
 
 /* ================= AREA GIPSY ================= */
 
 .visual {
     position: relative;
 
-    width: 850px;
+    width: 65%;
     min-height: 1400px;
 
     flex-shrink: 0;
 }
-
 
 /* ================= GIPSY ================= */
 
 .gipsy {
     position: absolute;
 
-    width: 500px;
+    width: 60%;
 
     left: 0;
     bottom: 500px;
@@ -179,22 +165,19 @@ body {
     display: block;
 }
 
-
 /* ================= SENJATA ================= */
 
 .weapons {
     position: absolute;
 
     right: 0;
-    top: 0px;
+    top: 0;
 
-    width: 350px;
+    width: 42%;
 
     color: white;
-
     z-index: 3;
 }
-
 
 /* ================= CHAIN SWORD ================= */
 
@@ -205,30 +188,22 @@ body {
 .weapon img {
     width: 100%;
     height: auto;
-
     display: block;
-
     object-fit: contain;
 }
 
 .weapon h2 {
-    margin: 5px 0 5px 0;
-
+    margin: 5px 0;
     font-size: 24px;
-
     color: white;
 }
 
 .weapon p {
     margin: 0;
-
     font-size: 15px;
-
     line-height: 1.5;
-
     color: white;
 }
-
 
 /* ================= PLASMA CASTER ================= */
 
@@ -239,61 +214,50 @@ body {
 .plasma img {
     width: 100%;
     height: auto;
-
     display: block;
-
     object-fit: contain;
 }
 
 .plasma h2 {
-    margin: 10px 0 5px 0;
-
+    margin: 10px 0 5px;
     font-size: 24px;
-
     color: white;
 }
 
 .plasma p {
     margin: 0;
-
     font-size: 15px;
-
     line-height: 1.5;
-
     color: white;
 }
+
 /* ================= SIKU GIPSY ================= */
 
 .siku {
-    margin-top:25px ;
+    margin-top: 25px;
 }
 
-.siku img{
+.siku img {
     width: 100%;
     height: auto;
-
     display: block;
-
     object-fit: contain;
 }
 
 .siku h2 {
-    margin: 10px 0 5px 0;
-
+    margin: 10px 0 5px;
     font-size: 24px;
-
     color: white;
 }
 
 .siku p {
     margin: 0;
-
     font-size: 15px;
-
     line-height: 1.5;
-
     color: white;
 }
+
+/* ================= FOOTER ================= */
 
 .footer {
     background-color: #080d14;
@@ -304,14 +268,13 @@ body {
     margin-top: 0;
 
     width: 100%;
-    box-sizing: border-box;
 
     position: relative;
     z-index: 10;
 }
 
 .footer h1 {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
 }
 
 .footer p {
@@ -391,30 +354,122 @@ body {
     color: #000560;
 }
 
+/* ================= TABLET ================= */
 
+@media (max-width: 900px) {
 
-/* ================= LAYAR KECIL ================= */
+    .body {
+        padding: 70px 3% 0;
+        gap: 2%;
+    }
+
+    .info {
+        width: 32%;
+        padding: 40px 15px;
+    }
+
+    .visual {
+        width: 66%;
+    }
+
+    .gipsy {
+        width: 58%;
+    }
+
+    .weapons {
+        width: 45%;
+    }
+
+}
+
+/* ================= HP ================= */
 
 @media (max-width: 700px) {
 
     .header {
-        min-height: 160px;
+        height: 250px;
+        background-size: cover;
     }
 
     .logo {
-        width: 220px;
-        height: 70px;
-
-        margin-left: 15px;
-        margin-top: 15px;
+        width: 150px;
+        height: 75px;
+        left: 15px;
+        top: 15px;
     }
 
     .menu {
-        margin-left: auto;
-        margin-right: 15px;
-        margin-top: 25px;
+        right: 5px;
+        left: 5px;
+        top: 120px;
+        text-align: center;
+        font-size: 13px;
+        margin: 0;
+    }
 
-        font-size: 14px;
+    .menu a {
+        margin: 0 5px;
+    }
+
+    .body {
+        flex-direction: column;
+        padding: 40px 15px;
+        gap: 40px;
+    }
+
+    .info {
+        width: 100%;
+        min-height: auto;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .info-box {
+        height: 100px;
+    }
+
+    .visual {
+        width: 100%;
+        min-height: 1100px;
+    }
+
+    .gipsy {
+        width: 58%;
+        bottom: 400px;
+    }
+
+    .weapons {
+        width: 43%;
+    }
+
+    .weapon h2,
+    .plasma h2,
+    .siku h2 {
+        font-size: 18px;
+    }
+
+    .weapon p,
+    .plasma p,
+    .siku p {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+    }
+
+    .footer-center {
+        width: 100%;
+    }
+
+    .footer-menu a {
+        margin: 0 5px;
     }
 
 }
@@ -422,19 +477,15 @@ body {
 </style>
 </head>
 
-
 <body>
-
 
 <!-- ================= HEADER ================= -->
 
 <div class="header">
 
-    <div class="logo">
-    </div>
+    <div class="logo"></div>
 
     <div class="menu">
-
         <a href="#"><strong>HOME</strong></a> |
         <a href="#"><strong>JAEGER</strong></a> |
         <a href="#"><strong>KAIJU</strong></a> |
@@ -443,57 +494,45 @@ body {
 
 </div>
 
-
-
 <!-- ================= BODY ================= -->
 
 <div class="body">
 
-
     <!-- INFO GIPSY -->
 
-   <!-- MENU INFO GIPSY -->
+    <div class="info">
 
-<div class="info">
+        <div class="info-box">
+            <h2>ABOUT</h2>
+        </div>
 
-    <div class="info-box">
-        <h2>ABOUT</h2>
+        <div class="info-box">
+            <h2>BIODATA</h2>
+        </div>
+
+        <div class="info-box">
+            <h2>SOCIAL MEDIA</h2>
+        </div>
+
     </div>
 
-    <div class="info-box">
-        <h2>BIODATA</h2>
-    </div>
-
-    <div class="info-box">
-        <h2>SOCIAL MEDIA</h2>
-    </div>
-
-</div>
-
-    <!-- ================= AREA VISUAL ================= -->
+    <!-- AREA VISUAL -->
 
     <div class="visual">
-
 
         <!-- GIPSY -->
 
         <div class="gipsy">
-
             <img src="gipsynobg.jpg">
-
         </div>
 
-
-
-        <!-- ================= SENJATA ================= -->
+        <!-- SENJATA -->
 
         <div class="weapons">
-
 
             <!-- CHAIN SWORD -->
 
             <div class="weapon">
-
                 <img src="gsword.jpg">
 
                 <h2>CHAIN SWORD</h2>
@@ -503,15 +542,11 @@ body {
                     yang digunakan untuk menghadapi
                     Kaiju dalam pertarungan jarak dekat.
                 </p>
-
             </div>
-
-
 
             <!-- PLASMA CASTER -->
 
             <div class="plasma">
-
                 <img src="gplasma.jpg">
 
                 <h2>PLASMA CASTER</h2>
@@ -522,37 +557,30 @@ body {
                     untuk memberikan serangan plasma
                     berkekuatan tinggi.
                 </p>
-
             </div>
 
-            <div class="siku">
+            <!-- ELBOW THUNDER -->
 
+            <div class="siku">
                 <img src="gsiku.jpg">
 
                 <h2>ELBOW THUNDER</h2>
 
                 <p>
-                    Sistem pendorong yang terpasang Pada
-                    bagian siku Gipsy Danger. Menggunakan 
+                    Sistem pendorong yang terpasang pada
+                    bagian siku Gipsy Danger. Menggunakan
                     semburan tenaga untuk meningkatkan gaya
-                    dorong saat melakukan pukulan,sehingga
+                    dorong saat melakukan pukulan, sehingga
                     menghasilkan serangan yang lebih kuat
-                    terhada kaiju.
-                    
+                    terhadap Kaiju.
                 </p>
-
             </div>
-
-
 
         </div>
 
-
     </div>
-    </div> <!-- .visual -->
 
-</div> <!-- .body -->
-
+</div>
 
 <!-- ================= FOOTER ================= -->
 
@@ -560,15 +588,10 @@ body {
 
     <div class="footer-content">
 
-        <!-- KIRI -->
         <div class="footer-left">
-
             <img src="logosija.jpg">
-
         </div>
 
-
-        <!-- TENGAH -->
         <div class="footer-center">
 
             <h1>PACIFIC RIM</h1>
@@ -578,39 +601,35 @@ body {
             </p>
 
             <div class="footer-menu">
-
                 <a href="#"><strong>HOME</strong></a> |
                 <a href="#"><strong>JAEGER</strong></a> |
                 <a href="#"><strong>KAIJU</strong></a> |
                 <a href="#"><strong>DEVELOPER</strong></a>
-
             </div>
 
         </div>
 
-
-        <!-- KANAN -->
         <div class="footer-right">
 
-    <h3>FOLLOW ME</h3>
+            <h3>FOLLOW ME</h3>
 
-    <div class="social-media">
+            <div class="social-media">
 
-        <a href="#" title="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
+                <a href="#" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
 
-        <a href="#" title="TikTok">
-            <i class="fa-brands fa-tiktok"></i>
-        </a>
+                <a href="#" title="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
 
-        <a href="#" title="YouTube">
-            <i class="fa-brands fa-youtube"></i>
-        </a>
+                <a href="#" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
 
-    </div>
+            </div>
 
-</div>
+        </div>
 
     </div>
 
@@ -621,7 +640,6 @@ body {
     </p>
 
 </div>
-
 
 </body>
 </html>
